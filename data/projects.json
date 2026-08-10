@@ -1,0 +1,73 @@
+{
+  "projects": [
+    {
+      "id": "mazaq",
+      "name": "Mazaq",
+      "category": "Instant Hot Beverage Brand",
+      "gradient": "linear-gradient(135deg,#B5324C,#E8734A)",
+      "badgeText": "🎓 Diploma Graduation Project",
+      "badgeStyle": "diploma",
+      "mediaIconSvg": "<path d=\"M4 9h13v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9z\"/><path d=\"M17 10h1.5a2.5 2.5 0 0 1 0 5H17\"/><path d=\"M8 4c0 1-1 1-1 2s1 1 1 2M12 4c0 1-1 1-1 2s1 1 1 2\"/>",
+      "mediaLabel": "Full Go-to-Market Marketing Plan",
+      "description": "A complete go-to-market strategy for Mazaq — from market and competitor analysis to a 3-month content and Meta Ads plan — built as the final project for a digital marketing diploma.",
+      "strategyPoints": [
+        "Full brand audit: market &amp; category, digital environment, competitor &amp; SWOT analysis",
+        "Positioned Mazaq as \"the instant hot beverage that turns everyday moments into cozy, enjoyable experiences\"",
+        "Buyer personas built around \"the digital youth\" and \"comfort seekers\"",
+        "SMART objectives and KPIs mapped across a 3-month horizon"
+      ],
+      "metrics": [
+        { "iconSvg": "<path d=\"M12 2v20M2 12h20\"/>", "value": "3-Mo", "label": "strategy" },
+        { "iconSvg": "<path d=\"M3 12h18M3 6h18M3 18h18\"/>", "value": "2-Wk", "label": "calendar" }
+      ],
+      "pdfUrl": "project/Mazaq_Marketing_Plan.pdf",
+      "pdfLabel": "↓ Download Full Marketing Plan (PDF)"
+    },
+    {
+      "id": "okhtein",
+      "name": "Okhtein",
+      "category": "Luxury Accessories House",
+      "gradient": "linear-gradient(135deg,#16233F,#C9A227)",
+      "badgeText": "⚠ Trial Campaign — Not Commissioned",
+      "badgeStyle": "trial",
+      "mediaIconSvg": "<path d=\"M6 7h12l1 13H5L6 7z\"/><path d=\"M9 7a3 3 0 0 1 6 0\"/>",
+      "mediaLabel": "30-Day Integrated Social Campaign",
+      "description": "A 30-day social campaign concept to close Okhtein's TikTok gap and strengthen its lower-funnel conversion path, built around the brand's heritage-luxury story.",
+      "strategyPoints": [
+        "Five-pillar content system rooted in heritage, craft, and founder story",
+        "14-day content calendar with caption direction per pillar",
+        "Phased Meta Ads funnel — Awareness → Consideration → Conversion — on a simulated $1,000 budget",
+        "Two buyer personas across Cairo and Gulf-based customers"
+      ],
+      "metrics": [
+        { "iconSvg": "<path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z\"/>", "value": "+25%", "label": "reach" },
+        { "iconSvg": "<path d=\"M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 21l1.9-5.7A8.38 8.38 0 0 1 12.5 3a8.5 8.5 0 0 1 8.5 8.5z\"/>", "value": "3.2%", "label": "engagement" }
+      ],
+      "pdfUrl": "project/Okhtein_Campaign_Deck.pdf",
+      "pdfLabel": "↓ Download Campaign Deck (PDF)"
+    },
+    {
+      "id": "noon",
+      "name": "Noon",
+      "category": "Egyptian E-Commerce Brand",
+      "gradient": "linear-gradient(135deg,#1B7A6B,#FF4D94)",
+      "badgeText": "⚠ Trial Campaign — Not Commissioned",
+      "badgeStyle": "trial",
+      "mediaIconSvg": "<circle cx=\"9\" cy=\"20\" r=\"1.3\"/><circle cx=\"17\" cy=\"20\" r=\"1.3\"/><path d=\"M2 3h2l2.6 12.4A2 2 0 0 0 8.5 17h8.9a2 2 0 0 0 1.9-1.4L21 7H6\"/>",
+      "mediaLabel": "30-Day Full-Funnel Performance Campaign",
+      "description": "A 30-day full-funnel social and Meta Ads strategy designed to grow Noon's paid-social sales from near-zero to 350+ monthly orders on a 5,000 EGP budget.",
+      "strategyPoints": [
+        "Five content pillars: Product Spotlight, Trend &amp; Culture, Social Proof &amp; UGC, Offers, Community",
+        "14-day Egyptian-Arabic content calendar mapped day-by-day",
+        "Three-stage Meta Ads funnel — Awareness → Consideration → Conversion — with retargeting",
+        "SWOT and competitor analysis against Jumia Egypt and Zoodmall"
+      ],
+      "metrics": [
+        { "iconSvg": "<path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z\"/>", "value": "350+", "label": "orders" },
+        { "iconSvg": "<path d=\"M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 21l1.9-5.7A8.38 8.38 0 0 1 12.5 3a8.5 8.5 0 0 1 8.5 8.5z\"/>", "value": "+6,000", "label": "followers" }
+      ],
+      "pdfUrl": "project/Noon_Campaign_Deck.pdf",
+      "pdfLabel": "↓ Download Campaign Deck (PDF)"
+    }
+  ]
+}
