@@ -10,7 +10,7 @@
       "contact": "Contact"
     },
     "hero": {
-      "eyebrow": "Open to work — New Cairo, Egypt",
+      "eyebrow": "Open to work",
       "name": "Yara Ayman Hussein",
       "nameGrad": "Ayman",
       "role": "Social Media Specialist who plans content and runs paid campaigns — trained in Meta Ads, audience growth, and analytics.",
@@ -101,9 +101,9 @@
     "contact": {
       "eyebrow": "Contact",
       "heading": "Got a campaign in mind?<br><span class=\"grad-text\">Let's talk it through.</span>",
-      "lede": "Open to social media specialist and content strategy roles across Cairo and remote teams.",
+      "lede": "Open to social media specialist and content strategy roles.",
       "reelsLink": "Reels & Stories Ideas ↗",
-      "fine": "© 2026 Yara Ayman Hussein — New Cairo, Egypt"
+      "fine": "© 2026 Yara Ayman Hussein"
     },
     "reels": {
       "eyebrow": "Content Ideas",
@@ -115,7 +115,7 @@
       "storyboardLabel": "Storyboard",
       "whyLabel": "Why This Works",
       "empty": "No Reels & Stories ideas added yet — check back soon.",
-      "fine": "© 2026 Yara Ayman Hussein — New Cairo, Egypt"
+      "fine": "© 2026 Yara Ayman Hussein"
     }
   },
   "ar": {
@@ -129,7 +129,7 @@
       "contact": "تواصل"
     },
     "hero": {
-      "eyebrow": "متاحة للشغل — القاهرة الجديدة، مصر",
+      "eyebrow": "متاحة للشغل",
       "name": "يارا أيمن حسين",
       "nameGrad": "أيمن",
       "role": "متخصصة سوشيال ميديا بتخطط للمحتوى وتدير الكامبينز المدفوعة — اتدربت على إعلانات ميتا، نمو الجمهور، والتحليلات.",
@@ -220,9 +220,9 @@
     "contact": {
       "eyebrow": "تواصل",
       "heading": "عندك كامبين في بالك؟<br><span class=\"grad-text\">يلا نتكلم عليه.</span>",
-      "lede": "متاحة لوظايف أخصائي سوشيال ميديا واستراتيجية محتوى في القاهرة أو مع فرق عن بُعد.",
+      "lede": "متاحة لوظايف أخصائي سوشيال ميديا واستراتيجية محتوى، أو مع فرق عن بُعد.",
       "reelsLink": "أفكار ريلز وستوريز ↗",
-      "fine": "© 2026 يارا أيمن حسين — القاهرة الجديدة، مصر"
+      "fine": "© 2026 يارا أيمن حسين"
     },
     "reels": {
       "eyebrow": "أفكار محتوى",
@@ -234,7 +234,7 @@
       "storyboardLabel": "الستوري بورد",
       "whyLabel": "ليه ده شغال؟",
       "empty": "لسه مفيش أفكار ريلز وستوريز متضافة — تابعينا قريب.",
-      "fine": "© 2026 يارا أيمن حسين — القاهرة الجديدة، مصر"
+      "fine": "© 2026 يارا أيمن حسين"
     }
   }
 }
