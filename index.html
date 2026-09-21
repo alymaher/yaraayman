@@ -903,11 +903,7 @@
   ]).then(([i18n, projects])=>{
     i18nData = i18n;
 projectsData = (projects && projects.projects) || [];
-
-const projectsCount = document.getElementById('projects-count');
-if (projectsCount) {
-  projectsCount.textContent = projectsData.length;
-}
+applyLang(currentLang);
 
 applyLang(currentLang);
   }).catch(()=>{
