@@ -902,10 +902,8 @@
     fetch('data/projects.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : { projects: [] })
   ]).then(([i18n, projects])=>{
     i18nData = i18n;
-projectsData = (projects && projects.projects) || [];
-applyLang(currentLang);
-
-applyLang(currentLang);
+    projectsData = (projects && projects.projects) || [];
+    applyLang(currentLang);
   }).catch(()=>{
     casesGrid.innerHTML = '<p style="color:var(--ink-dim); font-size:13px;">Couldn\'t load page content right now.</p>';
   });
