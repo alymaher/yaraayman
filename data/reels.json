@@ -2,16 +2,34 @@
   "reels": [
     {
       "id": "mazaq-1790286211408",
-      "title": "Mazaq day 2 (study mood on)",
+      "title": {
+        "en": "Mazaq Day 2 — Study Mood On",
+        "ar": "مذاق — اليوم التاني: مود المذاكرة اشتغل"
+      },
       "brand": "Mazaq",
       "format": "Reel",
       "storyboard": [
-        "Late-night study/work scene with the person focused on the laptop and Mazaq beside them.",
-        "The person continues studying while the voice-over says: “وراكم مذاكرة كتير؟”",
-        "A subtle camera movement reveals the Mazaq coffee, connecting it naturally to the study moment.",
-        "The voice-over continues: “مذاق بيظبط يومك.”"
+        {
+          "en": "Late-night study/work scene with the person focused on the laptop and Mazaq beside them.",
+          "ar": "مشهد مذاكرة أو شغل بالليل، والشخص مركز في اللابتوب ومذاق جنبه."
+        },
+        {
+          "en": "The person keeps studying while the voice-over says: “وراكم مذاكرة كتير؟”",
+          "ar": "الشخص مكمل مذاكرة، والـVoice-over بيقول: «وراكم مذاكرة كتير؟»"
+        },
+        {
+          "en": "A subtle camera movement reveals the Mazaq coffee, connecting it naturally to the study moment.",
+          "ar": "حركة كاميرا بسيطة تكشف قهوة مذاق وتربطها بالمود بشكل طبيعي."
+        },
+        {
+          "en": "The voice-over continues: “مذاق بيظبط يومك.”",
+          "ar": "الـVoice-over بيكمل: «مذاق بيظبط يومك.»"
+        }
       ],
-      "whyItWorks": "The reel uses a relatable study moment and a simple voice-over to position Mazaq as a small boost that makes long study days feel better. The product is integrated naturally into the scene rather than feeling like a hard sell.",
+      "whyItWorks": {
+        "en": "The reel uses a relatable study moment and a simple voice-over to position Mazaq as a small boost that makes long study days feel better. The product is integrated naturally into the scene rather than feeling like a hard sell.",
+        "ar": "الفكرة بتستخدم لحظة مذاكرة قريبة من الناس مع Voice-over بسيط، وبتخلي مذاق جزء طبيعي من المود بدل ما الإعلان يبقى بيع مباشر. المنتج موجود جوه المشهد كجزء من اللحظة نفسها."
+      },
       "videoUrl": "media/reels/1790286195086-Mazaq_Day_2.mp4"
     }
   ]

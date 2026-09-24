@@ -116,6 +116,9 @@
       "whyLabel": "Why This Works",
       "empty": "No Reels & Stories ideas added yet — check back soon.",
       "fine": "© 2026 Yara Ayman Hussein"
+    },
+    "common": {
+      "close": "Close"
     }
   },
   "ar": {
@@ -235,6 +238,9 @@
       "whyLabel": "ليه ده شغال؟",
       "empty": "لسه مفيش أفكار ريلز وستوريز متضافة — تابعينا قريب.",
       "fine": "© 2026 يارا أيمن حسين"
+    },
+    "common": {
+      "close": "إغلاق"
     }
   }
 }
