@@ -180,6 +180,21 @@
 
   footer.mini-footer{ padding:50px 0; border-top:1px solid var(--line); text-align:center; }
   footer.mini-footer .fine{ font-size:12px; color:var(--ink-dim); margin-top:8px; }
+
+  /* Explicit light-theme overrides */
+  :root[data-theme="light"] body{ background:#FAFAFA; color:#171717; }
+  :root[data-theme="light"] header.storynav{ background:rgba(250,250,250,.88); border-bottom-color:rgba(20,20,20,.10); }
+  :root[data-theme="light"] .ring .inner{ background:#FAFAFA; color:#171717; }
+  :root[data-theme="light"] .ring-btn span.lbl{ color:#6B6B6B; }
+  :root[data-theme="light"] .util-btn{ background:#fff; color:#171717; border-color:rgba(20,20,20,.12); }
+  :root[data-theme="light"] .back-link{ color:#6B6B6B; }
+  :root[data-theme="light"] .page-hero p.lede{ color:#6B6B6B; }
+  :root[data-theme="light"] .reel-card.placeholder{ background:#fff; border-color:rgba(20,20,20,.20); color:#171717; }
+  :root[data-theme="light"] .modal-panel{ background:#fff; color:#171717; border-color:rgba(20,20,20,.10); box-shadow:0 30px 80px rgba(0,0,0,.18); }
+  :root[data-theme="light"] .modal-close{ color:#171717; background:#f1f0f0; border-color:rgba(20,20,20,.10); }
+  :root[data-theme="light"] .sb-list li{ color:#303030; border-color:rgba(20,20,20,.10); }
+  :root[data-theme="light"] .why-box{ background:#f5f4f4; border-color:rgba(20,20,20,.10); }
+
 </style>
 </head>
 <body>
@@ -439,15 +454,13 @@
   }
   langToggleBtn.addEventListener('click', ()=> applyLang(currentLang === 'ar' ? 'en' : 'ar'));
 
-  // ---------- load data then render everything in the current language ----------
+  // ---------- render immediately, then hydrate from JSON ----------
+  // The first render is intentionally local so the reel is visible even if
+  // GitHub Pages/CDN temporarily fails to fetch the JSON files.
   const FALLBACK_REELS = [{
     id: 'mazaq-day-2',
-    title: {
-      en: 'Mazaq Day 2 — Study Mood On',
-      ar: 'مذاق — اليوم التاني: مود المذاكرة اشتغل'
-    },
-    brand: 'Mazaq',
-    format: 'Reel',
+    title: { en: 'Mazaq Day 2 — Study Mood On', ar: 'مذاق — اليوم التاني: مود المذاكرة اشتغل' },
+    brand: 'Mazaq', format: 'Reel',
     storyboard: [
       { en: 'Late-night study/work scene with the person focused on the laptop and Mazaq beside them.', ar: 'مشهد مذاكرة أو شغل بالليل، والشخص مركز في اللابتوب ومذاق جنبه.' },
       { en: 'The person keeps studying while the voice-over says: “وراكم مذاكرة كتير؟”', ar: 'الشخص مكمل مذاكرة، والـVoice-over بيقول: «وراكم مذاكرة كتير؟»' },
@@ -461,19 +474,27 @@
     videoUrl: 'media/reels/1790286195086-Mazaq_Day_2.mp4'
   }];
 
+  // Always show the current reel first. JSON is an enhancement, not a requirement.
+  reelsData = FALLBACK_REELS.slice();
+  i18nData = {
+    en: { nav:{about:'About',skills:'Skills',work:'Work',creds:'Creds',cases:'Cases',reels:'Reels',contact:'Contact'}, common:{close:'Close'}, reels:{eyebrow:'Content Ideas',headingPlain:'Reels & Stories, ',headingGrad:'ready to film.',lede:'Short vertical video ideas (9:16) — tap a card to see the full storyboard and what makes the idea work.',back:'← Back to portfolio',storyboardBtn:'View Storyboard →',storyboardLabel:'Storyboard',whyLabel:'Why This Works',empty:'No Reels & Stories ideas added yet — check back soon.',fine:'© 2026 Yara Ayman Hussein'}},
+    ar: { nav:{about:'نبذة',skills:'مهاراتي',work:'شغلي',creds:'شهاداتي',cases:'شغل حقيقي',reels:'ريلز',contact:'تواصل'}, common:{close:'إغلاق'}, reels:{eyebrow:'أفكار محتوى',headingPlain:'ريلز وستوريز، ',headingGrad:'جاهزين للتصوير.',lede:'أفكار فيديوهات عمودية قصيرة (9:16) — دوسي على أي كارت علشان تشوفي الستوري بورد كامل وإيه اللي بيخلي الفكرة تشتغل.',back:'← رجوع للبورتفوليو',storyboardBtn:'شوف الستوري بورد ←',storyboardLabel:'الستوري بورد',whyLabel:'ليه ده شغال؟',empty:'لسه مفيش أفكار ريلز وستوريز متضافة — تابعينا قريب.',fine:'© 2026 يارا أيمن حسين'}}
+  };
+  applyLang(currentLang);
+
+  // Hydrate from the editable JSON used by the Admin page. If it fails,
+  // the already-visible fallback reel remains on screen.
   Promise.all([
-    fetch('data/i18n.json', { cache: 'no-store' }).then(r => { if(!r.ok) throw new Error('i18n'); return r.json(); }),
-    fetch('data/reels.json', { cache: 'no-store' }).then(r => { if(!r.ok) throw new Error('reels'); return r.json(); })
-  ]).then(([i18n, data])=>{
+    fetch('data/i18n.json', {cache:'no-store'}).then(r=>{if(!r.ok) throw new Error('i18n'); return r.json();}),
+    fetch('data/reels.json', {cache:'no-store'}).then(r=>{if(!r.ok) throw new Error('reels'); return r.json();})
+  ]).then(([i18n,data])=>{
     i18nData = i18n;
-    reelsData = (data && Array.isArray(data.reels)) ? data.reels : FALLBACK_REELS;
+    if(data && Array.isArray(data.reels) && data.reels.length) reelsData = data.reels;
     applyLang(currentLang);
-  }).catch(()=>{
-    // Keep the page usable even when a local preview or cached deployment cannot fetch JSON.
-    i18nData = { en: { nav:{about:'About',skills:'Skills',work:'Work',creds:'Creds',cases:'Cases',reels:'Reels',contact:'Contact'}, common:{close:'Close'}, reels:{eyebrow:'Content Ideas',headingPlain:'Reels & Stories, ',headingGrad:'ready to film.',lede:'Short vertical video ideas (9:16) — tap a card to see the full storyboard and what makes the idea work.',back:'← Back to portfolio',storyboardBtn:'View Storyboard →',storyboardLabel:'Storyboard',whyLabel:'Why This Works',empty:'No Reels & Stories ideas added yet — check back soon.',fine:'© 2026 Yara Ayman Hussein'}}, ar: { nav:{about:'نبذة',skills:'المهارات',work:'الخبرة',creds:'الشهادات',cases:'الأعمال',reels:'الريلز',contact:'تواصل'}, common:{close:'إغلاق'}, reels:{eyebrow:'أفكار محتوى',headingPlain:'ريلز وستوريز، ',headingGrad:'جاهزة للتنفيذ.',lede:'أفكار فيديو قصيرة عمودية (9:16) — دوس على الكارت عشان تشوف الـStoryboard كامل وليه الفكرة شغالة.',back:'← رجوع للـPortfolio',storyboardBtn:'شوف الـStoryboard →',storyboardLabel:'Storyboard',whyLabel:'ليه الفكرة شغالة؟',empty:'مفيش أفكار ريلز وستوريز مضافة لسه — ارجع قريب.',fine:'© 2026 Yara Ayman Hussein'}} };
-    reelsData = FALLBACK_REELS;
-    applyLang(currentLang);
+  }).catch(err=>{
+    console.warn('Using built-in reel fallback:', err);
   });
+
 </script>
 
 </body>
