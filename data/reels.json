@@ -1,3 +1,18 @@
 {
-  "reels": []
+  "reels": [
+    {
+      "id": "mazaq-1790354974929",
+      "title": "Day 2 [study mood]",
+      "brand": "Mazaq",
+      "format": "Reel",
+      "storyboard": [
+        "Late-night study/work scene with the person focused on the laptop and Mazaq beside them.",
+        "The person continues studying while the voice-over says: “وراكم مذاكرة كتير؟”",
+        "A subtle camera movement reveals the Mazaq coffee, connecting it naturally to the study moment.",
+        "The voice-over continues: “مذاق بيظبط يومك.”"
+      ],
+      "whyItWorks": "The reel uses a relatable study moment and a simple voice-over to position Mazaq as a small boost that makes long study days feel better. The product is integrated naturally into the scene rather than feeling like a hard sell.",
+      "videoUrl": "media/reels/1790354961111-Mazaq_Day_2.mp4"
+    }
+  ]
 }
