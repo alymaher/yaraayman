@@ -108,7 +108,7 @@ const BRAND_GRADIENTS = {
     card.className = 'reel-card';
     card.style.background = gradient;
     const videoHtml = (reel.videoUrl && isPlayableVideoUrl(reel.videoUrl))
-      ? `<video class="reel-video" src="${reel.videoUrl}" muted loop autoplay playsinline preload="metadata"></video>` : '';
+      ? `<video class="reel-video" src="${reel.videoUrl}" muted loop playsinline preload="metadata" preload="metadata"></video>` : '';
     card.innerHTML = `
       ${videoHtml}
       <div class="reel-top">
