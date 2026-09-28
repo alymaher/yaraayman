@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Al-Sayed | Creative Product Designer & Developer</title>
+  <meta name="description" content="Personal Portfolio inspired by modern digital experiences, featuring high-end UI/UX design, Web Development, and 3D fluid visuals." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23f3500f'/><text x='50%' y='68%' font-size='55' font-weight='900' fill='white' text-anchor='middle' font-family='sans-serif'>A</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#f3500f',
+              hover: '#ff682e',
+              glow: 'rgba(243, 80, 15, 0.4)'
+            },
+            dark: {
+              DEFAULT: '#0a0b12',
+              card: 'rgba(20, 23, 36, 0.7)'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            cairo: ['Cairo', 'sans-serif'],
+            rajdhani: ['Rajdhani', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="src/styles.css" />
+
+  <!-- React 18 & ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Babel Standalone for in-browser JSX transformation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body class="bg-[#0a0b12] text-slate-200 antialiased selection:bg-[#f3500f] selection:text-white">
+  
+  <!-- Root React App Container -->
+  <div id="root"></div>
+
+  <!-- Background 3D Liquid Canvas -->
+  <script src="src/canvas.js"></script>
+
+  <!-- Bilingual Content Data -->
+  <script src="src/data.js"></script>
+
+  <!-- React Application Component -->
+  <script type="text/babel" src="src/app.jsx"></script>
+</body>
+</html>
