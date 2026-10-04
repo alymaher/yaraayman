@@ -191,6 +191,34 @@
         "en": "↓ Download Campaign Deck (PDF)",
         "ar": "↓ حمّل عرض الكامبين (PDF)"
       }
+    },
+    {
+      "id": "yodawy-1791097356339",
+      "name": "Yodawy",
+      "category": "HealthTech · Digital Marketing",
+      "gradient": "linear-gradient(135deg,#2196f3,#ff8a00)",
+      "badgeText": "🎓 Spec Campaign — Not Commissioned",
+      "badgeStyle": "trial",
+      "mediaLabel": "30-Day App Growth & Performance Campaign",
+      "description": "A 30-day full-funnel growth campaign for Yodawy, designed to drive qualified app installs and convert them into first orders through content, Meta Ads, retargeting, and performance-focused strategy.",
+      "strategyPoints": [
+        "Full-funnel acquisition strategy built around Awareness → Consideration → Conversion.",
+        "Five-pillar content system covering health education, products, features, UGC, and offers.",
+        "Meta Ads plan designed to move users from reach and installs to first purchases through retargeting.",
+        "30-day campaign with a 6,500 EGP simulated budget and measurable install, order, and engagement targets."
+      ],
+      "metrics": [
+        {
+          "value": "80–120",
+          "label": "First Orders"
+        },
+        {
+          "value": "500–650",
+          "label": "Qualified Installs"
+        }
+      ],
+      "pdfUrl": "project/30-Day-App-Growth-and-Performance-Campaign.pdf",
+      "pdfLabel": "↓ Download Yodawy (PDF)"
     }
   ]
 }
